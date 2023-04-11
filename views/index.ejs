@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/bmi" method="POST">
+            <input type="text" name="height" placeholder="enter your height in cm">
+            <input type="text" name="weight" placeholder="enter your weight in kg">
+
+            <button type="submit">Confirm</button>
+        </form>
+
+        <p>Your BMI: <%= resultToRender.userBMI %> </p>
+        <p>Your fianl result: <%= resultToRender.result %> </p>
+    </div>
+</body>
+</html>
